@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void simpleCalculator(){
+    float a, b;
+    char op;
+    cout << "Enter Number, operation, number respictevly.\n";
+    cout << "For example: 5 + 3.\n";
+    cin >> a >> op >> b;
+    switch (op){
+        // addition
+    case '+':   
+        cout << a + b << endl;
+        break;
+        // subtraction
+    case '-':   
+        cout << a - b << endl;
+        break;
+        //multiplication
+    case '*':   
+        cout << a * b << endl;
+        break;
+        //division
+    case '/':   
+        cout << a / b << endl;
+        break;
+        // defense condition
+    default:
+        cout << "Invalid Operation.\n";
+        break;
+    }
+}
+
+int main(){     
+    simpleCalculator();
+}
